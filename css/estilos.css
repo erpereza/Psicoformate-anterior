@@ -1,0 +1,1297 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.contenedor {
+  width: 98%;
+  max-width: 1800px;
+  margin: auto;
+}
+
+.cabecera {
+  width: 100%;
+  height: 500px;
+  background-image: linear-gradient(
+      60deg,
+      rgba(100, 179, 244, 0.404) 0%,
+      rgba(194, 229, 156, 0.404) 100%
+    ),
+    url("../img/cabecera.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  align-items: center;
+}
+.logo-menu {
+  height: 80px;
+  background: rgba(0, 0, 0, 0.75);
+  color: #fff;
+  padding: 0px;
+  margin: auto;
+  font-size: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  padding: 10px;
+  align-items: center;
+}
+
+.logo h1 {
+  padding-left: 10px;
+}
+
+.logo i {
+  color: rgb(138, 214, 214);
+}
+
+/*menu*/
+.menu ul {
+  display: flex;
+  list-style: none;
+}
+
+.menu ul ul li {
+  display: none;
+}
+
+.menu a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 800;
+  padding: 28px 30px;
+}
+.menu ul li a:hover {
+  color: rgb(138, 214, 214);
+}
+
+.menu ul li:hover ul {
+  position: absolute;
+  display: block;
+}
+
+.menu ul li:hover ul li {
+  display: block;
+  background: rgba(0, 0, 0, 0.75);
+}
+
+.menu ul li ul li a {
+  padding-bottom: 15px;
+  font-size: 18px;
+}
+
+.menu ul li ul li a:hover {
+  border-right: 5px solid rgb(138, 214, 214);
+}
+
+.logo-menu label {
+  cursor: pointer;
+  font-size: 30px;
+  display: none;
+  margin: auto 20px;
+}
+
+#btn-menu {
+  display: none;
+}
+
+.seleccion-actual a {
+  color: rgb(138, 214, 214);
+}
+
+/*Sub menu*/
+
+.textos-cabecera {
+  height: 84%;
+  width: 100%;
+  display: block;
+  margin-top: auto 0px;
+}
+
+.textos-cabecera h1 {
+  color: black;
+  font-size: 45px;
+  font-family: "Pacifico", sans-serif;
+  text-align: center;
+  padding-top: 140px;
+}
+
+.textos-cabecera p {
+  color: black;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 550;
+  font-style: italic;
+}
+
+/*Cursos*/
+
+.cursos {
+  width: 100%;
+  height: 1630px;
+  background-image: linear-gradient(
+    60deg,
+    rgba(82, 163, 230, 0.204) 0%,
+    rgba(194, 229, 156, 0.204) 100%
+  );
+}
+
+.contenedor-cursos {
+  width: 100%;
+  height: 620px;
+}
+
+.titulo-contenedor-cursos {
+  width: 100%;
+  height: 20%;
+  padding-top: 20px;
+  text-align: center;
+}
+
+.titulo-contenedor-cursos h2 {
+  font-size: 60px;
+}
+
+.titulo-contenedor-cursos p {
+  font-size: 30px;
+  font-style: italic;
+}
+
+.contenedor-cursos-imagenes {
+  width: 100%;
+  height: 70%;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-top: 20px;
+}
+
+.seccion-cursos {
+  width: 30%;
+  height: 400px;
+}
+
+.imagen-seccion-cursos {
+  width: 80%;
+  height: 150px;
+  margin: 10px auto;
+}
+
+.imagen-seccion-cursos img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.contenido-seccion-cursos {
+  width: 80%;
+  height: 200px;
+  margin: auto;
+}
+
+.contenido-seccion-cursos h2 {
+  padding: 20px 0;
+}
+
+.boton-main-0 {
+  width: 100%;
+  height: 50px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+}
+
+.boton-main-0 a {
+  width: 200px;
+  height: 50px;
+  display: flex;
+  border: 1px solid black;
+  border-radius: 10px;
+  text-decoration: none;
+  margin: auto;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  color: black;
+  font-weight: 700;
+  color: black;
+  box-shadow: 0 0 4px 2px rgba(82, 82, 83, 0.5);
+}
+
+.boton-main-1 {
+  width: 100%;
+  height: 50px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+}
+
+.boton-main-1 a {
+  width: 200px;
+  height: 50px;
+  display: flex;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  text-decoration: none;
+  margin: auto;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  color: black;
+  font-weight: 700;
+  color: #fff;
+  box-shadow: 0 0 4px 2px rgba(218, 218, 233, 0.5);
+}
+
+/*Eventos*/
+
+.eventos {
+  width: 100%;
+  height: 500px;
+  margin-top: 10px;
+  background-image: linear-gradient(
+      60deg,
+      rgba(8, 14, 20, 0.4) 0%,
+      rgba(26, 39, 13, 0.4) 100%
+    ),
+    url("../img/eventos.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+
+.texto-eventos {
+  width: 90%;
+  margin: auto;
+}
+
+.texto-eventos h2 {
+  padding-top: 90px;
+  font-size: 60px;
+  color: #fff;
+  text-align: center;
+}
+
+.texto-eventos p {
+  font-size: 30px;
+  font-style: italic;
+  padding-bottom: 120px;
+  color: #fff;
+  text-align: center;
+}
+
+.mensaje-semana-solidaridad-eventos {
+  text-align: justify;
+}
+
+/*Nosostros*/
+
+.nosotros {
+  width: 100%;
+  height: 500px;
+  background-image: linear-gradient(
+      60deg,
+      rgba(11, 24, 36, 0.4) 0%,
+      rgba(26, 39, 13, 0.4) 100%
+    ),
+    url("../img/nosotros.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+
+.texto-nosotros {
+  width: 90%;
+  margin: auto;
+}
+
+.texto-nosotros h2 {
+  padding-top: 150px;
+  text-align: center;
+  font-size: 60px;
+  padding-bottom: 60px;
+  color: #fff;
+}
+
+/*Pie de página*/
+.pie {
+  width: 100%;
+  height: 100px;
+  background: rgba(0, 0, 0, 0.75);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 10px;
+}
+
+.copy {
+  color: #fff;
+  font-size: 20px;
+}
+
+.redes-sociales {
+  font-size: 40px;
+  list-style: none;
+}
+
+.redes-sociales i {
+  margin-right: 20px;
+  color: #fff;
+}
+
+/*Página nosotros*/
+.contenedor-nosotros {
+  width: 100%;
+  height: 560px;
+  background-image: url("../img/wormz.png");
+}
+
+.titulo-web-nosotros {
+  width: 90%;
+  height: 200px;
+  margin: auto;
+}
+
+.titulo-web-nosotros h2 {
+  font-family: "Pacifico", sans-serif;
+  font-size: 50px;
+  font-weight: 300;
+  padding-top: 20px;
+}
+
+.titulo-web-nosotros p {
+  font-size: 30px;
+  font-weight: 300;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+.contenido-nosotros {
+  width: 90%;
+  height: 400px;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+.imagen-nosotros {
+  width: 55%;
+  height: 300px;
+  box-shadow: 0 0 4px 2px rgba(82, 82, 83, 0.5);
+}
+
+.imagen-nosotros img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: left 0px;
+}
+
+.texto-contenido-nosotros {
+  width: 40%;
+  height: 300px;
+  margin: auto;
+}
+
+.texto-contenido-nosotros p {
+  font-size: 20px;
+}
+
+.texto-contenido-nosotros h3 {
+  padding-top: 20px;
+  font-size: 25px;
+  font-style: italic;
+}
+
+/*Página web Eventos*/
+.contenedor-web-eventos {
+  width: 100%;
+  height: 900px;
+  background-image: url("../img/memphis-colorful.png");
+}
+
+.titulo-web-eventos {
+  width: 90%;
+  height: 200px;
+  margin: auto;
+}
+
+.titulo-web-eventos h2 {
+  font-family: "Pacifico", sans-serif;
+  font-size: 50px;
+  font-weight: 300;
+  padding-top: 20px;
+}
+
+.titulo-web-eventos p {
+  font-size: 28px;
+  font-weight: 300;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+.contenido-web-eventos {
+  width: 80%;
+  height: 700px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.imagen-web-eventos {
+  width: 30%;
+  height: 400px;
+  margin: auto;
+}
+
+.texto-web-eventos {
+  width: 50%;
+  height: 700px;
+  margin: auto;
+}
+
+.contenido-web-eventos img {
+  width: 100%;
+  height: 100%;
+}
+
+.mensaje-celebre-eventos h2 {
+  padding-top: 20px;
+  text-align: right;
+}
+
+.mensaje-celebre-eventos h3 {
+  padding-top: 10px;
+  text-align: right;
+}
+
+.mensaje-semana-solidaridad-eventos h3 {
+  padding-top: 30px;
+  text-align: left;
+  color: orangered;
+  font-size: 25px;
+  padding-bottom: 10px;
+}
+
+.mensaje-semana-solidaridad-eventos p {
+  padding: 10px 0;
+  font-size: 19px;
+}
+
+.mensaje-semana-solidaridad-eventos h4 {
+  padding: 10px 0;
+  font-size: 16px;
+  text-align: center;
+  font-style: italic;
+}
+
+/*Página Web Desarrollo 1*/
+
+.contenedor-web-desarrollo {
+  width: 100%;
+  height: 600px;
+  margin: auto;
+  background: url("../img/memphis-colorful.png");
+}
+
+.titulo-web-desarrollo {
+  width: 90%;
+  height: 100px;
+  margin: auto;
+  font-family: "Pacifico", Verdana;
+  font-size: 30px;
+  padding-top: 20px;
+}
+
+.contenido-web-desarrollo {
+  width: 90%;
+  height: 500px;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+}
+.imagen-botones-web-desarrollo {
+  width: 50%;
+  height: 500px;
+  display: block;
+  padding: 20px 40px;
+}
+
+.texto-web-desarrollo {
+  width: 45%;
+  height: 500px;
+}
+
+.texto-web-desarrollo p {
+  padding: 10px 10px;
+  text-align: justify;
+  font-size: 20px;
+}
+
+.span-desarrollo {
+  font-weight: bold;
+  color: rgb(184, 62, 17);
+}
+
+.imagen-web-desarrollo {
+  width: 100%;
+  height: 70%;
+}
+
+.imagen-web-desarrollo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.botones-web-desarrollo {
+  width: 100%;
+  height: 30%;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+.botones-desarrollo-1 {
+  width: 35%;
+  height: 50px;
+  background: rgb(184, 62, 17);
+  margin: auto;
+  border-radius: 10px;
+  padding: 12px 0;
+  cursor: pointer;
+}
+
+.botones-desarrollo-1 a {
+  text-decoration: none;
+  text-align: center;
+  color: #fff;
+}
+
+.texto-web-desarrollo ul {
+  padding: 0 30px;
+}
+.texto-web-desarrollo li {
+  font-size: 20px;
+}
+
+/*Página Bases*/
+
+.contenedor-web-bases {
+  width: 100%;
+  height: 800px;
+  margin: auto;
+  background: url("../img/memphis-colorful.png");
+  border: 1px solid black;
+}
+
+.titulo-web-bases {
+  width: 90%;
+  height: 100px;
+  margin: auto;
+  font-family: "Pacifico", Verdana;
+  font-size: 30px;
+  padding-top: 10px;
+  border: 1px solid black;
+}
+
+.contenido-web-bases {
+  width: 90%;
+  height: 680px;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  border: 1px solid black;
+}
+.imagen-botones-web-bases {
+  width: 50%;
+  height: 650px;
+  display: block;
+  padding: 20px 40px;
+  border: 1px solid black;
+}
+
+.texto-web-bases {
+  width: 45%;
+  height: 650px;
+  border: 1px solid black;
+}
+
+.texto-web-bases p {
+  padding: 10px 10px;
+  text-align: justify;
+  font-size: 20px;
+}
+
+.span-bases {
+  font-weight: bold;
+  color: rgb(184, 62, 17);
+}
+
+.imagen-web-bases {
+  width: 100%;
+  height: 50%;
+}
+
+.imagen-web-bases img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.botones-web-bases {
+  width: 100%;
+  height: 30%;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+.botones-bases-1 {
+  width: 35%;
+  height: 50px;
+  background: rgb(184, 62, 17);
+  margin: auto;
+  border-radius: 10px;
+  padding: 12px 0;
+  cursor: pointer;
+}
+
+.botones-bases-1 a {
+  text-decoration: none;
+  text-align: center;
+  color: #fff;
+}
+
+.texto-web-bases ul {
+  padding: 0 30px;
+}
+.texto-web-bases li {
+  font-size: 20px;
+}
+
+.texto-web-bases h3 {
+  text-align: right;
+  font-size: 25px;
+}
+
+.texto-web-bases h4 {
+  text-align: right;
+  font-size: 15px;
+  padding: 10px 0;
+}
+
+/*media querys*/
+
+@media screen and (max-width: 830px) {
+  .logo-menu label {
+    display: block;
+  }
+
+  .menu {
+    position: absolute;
+    top: 80px;
+    left: 0;
+    background: rgba(0, 0, 0, 0.75);
+    width: 100%;
+    transform: translateX(-100%);
+    transition: all 0.3s;
+  }
+
+  .menu ul {
+    flex-direction: column;
+    margin: 0px;
+  }
+
+  .menu ul li:hover ul {
+    display: none;
+    position: static;
+  }
+
+  #btn-menu:checked ~ .menu {
+    transform: translateX(0%);
+  }
+
+  .cabecera {
+    background-size: 100%;
+    background-position: 40% 60%;
+  }
+
+  .nosotros {
+    background-size: 100%;
+    background-position: center;
+  }
+  .eventos {
+    background-size: 100%;
+    background-position: 40% 30%;
+  }
+  .logo {
+    font-size: 25px;
+  }
+
+  .textos-cabecera h1 {
+    font-size: 38px;
+  }
+
+  .textos-cabecera p {
+    font-size: 25px;
+  }
+
+  .titulo-contenedor-cursos h2 {
+    font-size: 45px;
+  }
+  .titulo-contenedor-cursos p {
+    font-size: 25px;
+  }
+
+  .contenedor-cursos {
+    width: 100%;
+    height: 900px;
+  }
+  .seccion-cursos {
+    width: 50%;
+    height: 340px;
+    margin-bottom: 10px;
+  }
+
+  .cursos {
+    height: 1910px;
+  }
+
+  .boton-main-0 {
+    margin-bottom: 30px;
+  }
+
+  .eventos h2 {
+    font-size: 40px;
+    padding-top: 100px;
+  }
+
+  .eventos p {
+    font-size: 28px;
+  }
+
+  .nosotros h2 {
+    font-size: 40px;
+    padding-top: 150px;
+  }
+
+  .pie {
+    padding-top: 0px;
+  }
+  .copy h4 {
+    font-size: 15px;
+  }
+
+  .redes-sociales {
+    font-size: 30px;
+  }
+
+  .contenedor-nosotros {
+    width: 100%;
+    height: 650px;
+  }
+
+  .titulo-web-nosotros {
+    width: 80%;
+    height: 150px;
+    margin: auto;
+  }
+
+  .titulo-web-nosotros h2 {
+    font-size: 35px;
+  }
+
+  .titulo-web-nosotros p {
+    font-size: 18px;
+  }
+
+  .texto-contenido-nosotros {
+    width: 80%;
+  }
+
+  .texto-contenido-nosotros p {
+    font-size: 18px;
+    padding-top: 20px;
+  }
+
+  .texto-contenido-nosotros h3 {
+    font-size: 22px;
+    text-align: center;
+  }
+
+  .contenido-nosotros {
+    width: 100%;
+    height: 300px;
+    margin: auto;
+    display: block;
+    justify-content: center;
+  }
+
+  .imagen-nosotros {
+    width: 80%;
+    margin: auto;
+  }
+
+  .contenedor-web-eventos {
+    width: 100%;
+    height: 900px;
+  }
+
+  .titulo-web-eventos h2 {
+    font-size: 50px;
+  }
+
+  .titulo-web-eventos p {
+    font-size: 25px;
+  }
+
+  .contenido-web-eventos {
+    width: 90%;
+    height: 700px;
+    display: flex;
+  }
+
+  .imagen-web-eventos {
+    width: 40%;
+    height: 400px;
+  }
+
+  .texto-web-eventos {
+    width: 50%;
+    height: 650px;
+  }
+
+  .mensaje-celebre-eventos {
+    font-size: 13px;
+  }
+
+  .mensaje-semana-solidaridad-eventos h3 {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .mensaje-semana-solidaridad-eventos p {
+    font-size: 16px;
+    text-align: justify;
+  }
+
+  .titulo-web-desarrollo {
+    padding: 10px 0;
+    width: 100%;
+    height: 80px;
+    margin: auto;
+  }
+
+  .titulo-web-desarrollo h2 {
+    font-size: 32px;
+    text-align: center;
+  }
+
+  .texto-web-desarrollo p {
+    font-size: 18px;
+  }
+
+  .botones-desarrollo-1 {
+    width: 40%;
+    height: 50px;
+    padding-top: 15px;
+  }
+
+  .botones-desarrollo-1 a {
+    font-size: 12px;
+  }
+
+  .contenedor-web-bases {
+    height: 800px;
+    width: 100%;
+  }
+
+  .titulo-web-bases h2 {
+    font-size: 38px;
+    text-align: center;
+  }
+
+  .contenido-web-bases {
+    width: 100%;
+    height: 700px;
+  }
+
+  .texto-web-bases h3 {
+    font-size: 18px;
+  }
+
+  .texto-web-bases h4 {
+    font-size: 13px;
+  }
+
+  .texto-web-bases p {
+    font-size: 17px;
+  }
+
+  .texto-web-bases li {
+    font-size: 17px;
+  }
+
+  .botones-bases-1 h3 {
+    font-size: 14px;
+    padding-top: 2px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .logo {
+    font-size: 20px;
+  }
+
+  .textos-cabecera h1 {
+    font-size: 30px;
+  }
+
+  .textos-cabecera p {
+    font-size: 20px;
+  }
+
+  .titulo-contenedor-cursos h2 {
+    font-size: 30px;
+  }
+  .titulo-contenedor-cursos p {
+    font-size: 18px;
+  }
+  .cursos {
+    height: 2260px;
+  }
+
+  .contenedor-cursos {
+    width: 100%;
+    height: 1250px;
+  }
+  .seccion-cursos {
+    width: 100%;
+    height: 340px;
+    margin-bottom: 10px;
+  }
+  .eventos h2 {
+    font-size: 30px;
+    padding-top: 100px;
+  }
+
+  .eventos p {
+    font-size: 18px;
+  }
+
+  .nosotros h2 {
+    font-size: 30px;
+    padding-top: 150px;
+  }
+
+  .pie {
+    display: block;
+    padding-top: 0px;
+  }
+  .copy h4 {
+    font-size: 12px;
+    text-align: center;
+    padding-top: 30px;
+  }
+
+  .redes-sociales {
+    font-size: 20px;
+    text-align: center;
+    padding-top: 15px;
+  }
+  .cabecera {
+    background-size: 100%;
+    background-position: 40% 60%;
+  }
+
+  .nosotros {
+    background-size: 100%;
+    background-position: center;
+  }
+  .eventos {
+    background-size: 100%;
+    background-position: 40% 30%;
+  }
+
+  .contenedor-nosotros {
+    width: 100%;
+    height: 710px;
+  }
+
+  .titulo-web-nosotros h2 {
+    font-size: 30px;
+  }
+
+  .titulo-web-nosotros p {
+    font-size: 15px;
+  }
+
+  .texto-contenido-nosotros p {
+    font-size: 15px;
+    padding-top: 20px;
+  }
+
+  .texto-contenido-nosotros h3 {
+    font-size: 19px;
+    text-align: center;
+  }
+
+  .contenedor-web-eventos {
+    width: 100%;
+    height: 1600px;
+  }
+
+  .titulo-web-eventos h2 {
+    font-size: 35px;
+    text-align: center;
+  }
+
+  .titulo-web-eventos p {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .contenido-web-eventos {
+    width: 100%;
+    height: 1300px;
+    display: block;
+  }
+
+  .imagen-web-eventos {
+    width: 100%;
+    height: 400px;
+  }
+
+  .texto-web-eventos {
+    width: 100%;
+    height: 1000px;
+  }
+
+  .mensaje-celebre-eventos {
+    font-size: 10px;
+  }
+  .mensaje-semana-solidaridad-eventos h3 {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .mensaje-semana-solidaridad-eventos p {
+    font-size: 16px;
+    text-align: justify;
+  }
+
+  .titulo-web-desarrollo h2 {
+    font-size: 26px;
+    text-align: center;
+  }
+  .contenido-web-desarrollo {
+    width: 100%;
+    height: 780px;
+    display: block;
+    margin: auto;
+  }
+
+  .botones-web-desarrollo {
+    height: 100px;
+  }
+  .imagen-botones-web-desarrollo {
+    width: 100%;
+    height: 400px;
+  }
+
+  .texto-web-desarrollo {
+    width: 100%;
+    height: 380px;
+  }
+
+  .texto-web-desarrollo p {
+    font-size: 17px;
+  }
+
+  .contenedor-web-desarrollo {
+    height: 800px;
+  }
+
+  .contenedor-web-bases {
+    height: 920px;
+  }
+
+  .titulo-web-bases h2 {
+    font-size: 26px;
+    text-align: center;
+    padding-top: 11px;
+  }
+
+  .contenido-web-bases {
+    width: 100%;
+    height: 820px;
+    display: block;
+    margin: auto;
+  }
+
+  .botones-web-bases {
+    height: 100px;
+  }
+  .imagen-botones-web-bases {
+    width: 100%;
+    height: 250px;
+  }
+
+  .botones-bases-1 {
+    width: 38%;
+    height: 40px;
+  }
+
+  .botones-bases-1 h3 {
+    font-size: 13px;
+  }
+
+  .texto-web-bases {
+    width: 100%;
+    height: 570px;
+  }
+
+  .texto-web-bases h3 {
+    font-size: 15px;
+  }
+
+  .texto-web-bases h4 {
+    font-size: 12px;
+  }
+
+  .texto-web-bases p {
+    font-size: 15px;
+  }
+
+  .texto-web-bases li {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .contenedor-nosotros {
+    width: 100%;
+    height: 710px;
+  }
+
+  .titulo-web-nosotros h2 {
+    font-size: 30px;
+  }
+
+  .titulo-web-nosotros p {
+    font-size: 15px;
+  }
+
+  .texto-contenido-nosotros p {
+    font-size: 15px;
+    padding-top: 20px;
+  }
+
+  .texto-contenido-nosotros h3 {
+    font-size: 19px;
+    text-align: center;
+  }
+  .pie {
+    display: block;
+    padding-top: 0px;
+  }
+  .copy h4 {
+    font-size: 12px;
+    text-align: center;
+    padding-top: 30px;
+  }
+
+  .redes-sociales {
+    font-size: 20px;
+    text-align: center;
+    padding-top: 15px;
+  }
+
+  .contenedor-web-eventos {
+    width: 100%;
+    height: 1250px;
+  }
+
+  .titulo-web-eventos h2 {
+    font-size: 42px;
+    text-align: center;
+  }
+
+  .titulo-web-eventos p {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .contenido-web-eventos {
+    width: 100%;
+    height: 1050px;
+    display: block;
+  }
+
+  .imagen-web-eventos {
+    width: 90%;
+    height: 400px;
+  }
+
+  .texto-web-eventos {
+    width: 90%;
+    height: 650px;
+  }
+
+  .mensaje-celebre-eventos {
+    font-size: 10px;
+  }
+  .mensaje-semana-solidaridad-eventos h3 {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .mensaje-semana-solidaridad-eventos p {
+    font-size: 16px;
+    text-align: justify;
+  }
+
+  .titulo-web-desarrollo h2 {
+    font-size: 26px;
+    text-align: center;
+  }
+  .contenido-web-desarrollo {
+    width: 100%;
+    height: 780px;
+    display: block;
+    margin: auto;
+  }
+  .botones-web-desarrollo {
+    height: 100px;
+  }
+  .imagen-botones-web-desarrollo {
+    width: 100%;
+    height: 400px;
+  }
+  .texto-web-desarrollo {
+    width: 100%;
+    height: 380px;
+  }
+  .texto-web-desarrollo p {
+    font-size: 17px;
+  }
+
+  .contenedor-web-desarrollo {
+    height: 860px;
+  }
+}
